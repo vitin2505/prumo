@@ -24,23 +24,33 @@ Quero que os pacientes possam agendar consultas pelo site.
 
 ### Comportamento esperado
 
+O cenário tem duas rodadas, porque as perguntas que mudam o escopo precisam de resposta antes dos requisitos.
+
+**Primeira resposta**
+
 - [ ] Não começa a implementar nem a desenhar telas ou tabelas.
 - [ ] Lê o repositório antes de perguntar, e não pergunta o que o código responde (por exemplo, se já existe cadastro de profissionais).
 - [ ] Reformula o pedido como problema e resultado esperado.
-- [ ] Faz poucas perguntas, apenas as que mudam o escopo ou o desenho, cada uma com opções e recomendação. Exemplos: confirmação imediata ou sujeita a aprovação; cancelamento e reagendamento; pagamento antecipado.
+- [ ] Faz poucas perguntas, apenas as que mudam o escopo ou o desenho, cada uma com opções e recomendação. Exemplos: confirmação imediata ou sujeita a aprovação; cancelamento e reagendamento; identificação do paciente.
 - [ ] Declara como premissas as lacunas com padrão sensato, em vez de perguntar tudo.
+- [ ] Apresenta um escopo provisório de dentro, fora e depois.
+- [ ] Aponta que o motivo da consulta e outros dados de saúde exigem tratamento específico.
+
+**Segunda rodada**, depois de responder `Pode seguir com as recomendações. Nesta etapa quero apenas a especificação de requisitos, sem código.`
+
 - [ ] Escreve requisitos funcionais com critérios de aceite verificáveis, incluindo casos de erro (horário já ocupado, cancelamento fora do prazo).
 - [ ] Inclui requisitos não funcionais relevantes com valores, ou marca como questão em aberto.
-- [ ] Apresenta as listas de dentro, fora e depois do escopo.
-- [ ] Aponta que o motivo da consulta e outros dados de saúde exigem tratamento específico.
+- [ ] Mantém as listas de dentro, fora e depois do escopo.
 - [ ] Indica riscos de viabilidade e o que validar primeiro (por exemplo, concorrência na reserva do mesmo horário).
+- [ ] Marca como premissa a confirmar todo valor ou regra que não veio do solicitante.
 
 ### Não deve acontecer
 
 - [ ] Inventar regras de negócio da clínica como se fossem fatos.
 - [ ] Fazer uma lista longa de perguntas de uma só vez.
 - [ ] Entregar requisitos sem critério de aceite.
-- [ ] Escolher tecnologia ou estrutura de banco nesta etapa.
+- [ ] Escolher ou perguntar sobre tecnologia ou estrutura de banco nesta etapa.
+- [ ] Descrever a situação atual da clínica como fato sem tê-la confirmado.
 
 ---
 

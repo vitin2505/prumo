@@ -23,7 +23,7 @@ Não use para tarefas pequenas e bem definidas: nelas, confirmar o entendimento 
 3. **Liste as lacunas** e classifique cada uma:
    - *bloqueante*: a resposta muda o desenho ou o escopo. Pergunte.
    - *presumível*: há um padrão sensato. Adote, registre como premissa e siga.
-4. **Pergunte de forma objetiva.** Poucas perguntas por vez, cada uma com opções e uma recomendação. Uma pergunta bem feita informa a consequência de cada resposta.
+4. **Pergunte de forma objetiva.** Poucas perguntas por vez, cada uma com opções e uma recomendação. Uma pergunta bem feita informa a consequência de cada resposta. Quando for preciso parar para esperar as respostas, a mesma mensagem já entrega o que não depende delas: o problema reformulado (passo 1), o que o código mostra, as premissas adotadas e um escopo provisório de dentro, fora e depois. Os requisitos detalhados vêm depois das respostas.
 5. **Defina atores e cenários**: quem usa, com que objetivo, qual o caminho principal e quais os alternativos e de exceção.
 6. **Escreva os requisitos funcionais** em forma verificável, com identificador. Cada um tem critério de aceite no formato dado, quando, então.
 7. **Escreva os requisitos não funcionais com número**: desempenho (latência no percentil, volume), disponibilidade, segurança e privacidade, acessibilidade, compatibilidade, observabilidade, custo. "Rápido" e "seguro" não são requisitos.
@@ -68,6 +68,8 @@ Inclua critérios para erro e exceção, não só para o caminho principal.
 - Fazer muitas perguntas de uma vez, ou perguntas cuja resposta está no código.
 - Presumir em silêncio uma decisão que muda o escopo.
 - Requisitos que descrevem a implementação ("usar tabela X").
+- Decidir ou perguntar sobre tecnologia nesta etapa (qual banco, qual biblioteca). Registre a necessidade ("os agendamentos precisam sobreviver a reinício") e deixe a escolha para a arquitetura.
+- Descrever a situação atual do negócio como fato sem tê-la confirmado; o que não foi confirmado é premissa.
 - Escopo sem lista do que fica de fora.
 - Aceitar "todos", "sempre", "tempo real" sem quantificar.
 - Inventar regras de negócio para preencher lacunas.

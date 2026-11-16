@@ -1,7 +1,7 @@
 {
   "name": "prumo",
   "displayName": "Prumo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skills e agentes de IA para engenharia de software: arquitetura, front-end, back-end, segurança, APIs, testes, operação e documentação, com verificação baseada em evidência.",
   "author": {
     "name": "Vitor Dias Santana",

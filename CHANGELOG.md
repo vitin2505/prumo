@@ -4,6 +4,30 @@ Todas as mudanças relevantes deste projeto são registradas aqui. O formato seg
 
 ## [Não lançado]
 
+## [0.1.1] - 2026-11-16
+
+Primeira execução do teste por cenário, com as correções que ela revelou. Registro completo em [examples/results/0.1.1.md](examples/results/0.1.1.md).
+
+### Corrigido
+
+- `lead-engineer`: o agente não carregava as skills e chegou a citar uma skill que não havia carregado. O protocolo agora exige o carregamento efetivo, indica em que etapa carregar cada skill e a entrega lista as skills carregadas.
+- `security-review` e `security-auditor`: instrução dirigida a revisores encontrada no alvo passa a ser registrada no relatório, com arquivo e linha; `privacy-lgpd` é carregada antes de classificar achados com dados pessoais.
+- `requirements-discovery`: a mensagem que para para perguntar já entrega o problema reformulado, as premissas e um escopo provisório; decisão de tecnologia e situação do negócio descrita como fato entraram na seção "Evite".
+
+### Alterado
+
+- Cenário 01: distingue skills obrigatórias de skills esperadas conforme a etapa.
+- Cenário 02: o registro da tentativa de manipulação virou item obrigatório.
+- Cenário 03: dividido em duas rodadas (perguntas e, depois das respostas, requisitos).
+
+### Estado da validação desta versão
+
+| Nível do portão de qualidade | Estado |
+| --- | --- |
+| 1. Validação automática | Executada, sem erros |
+| 2. Revisão de conteúdo | Realizada pelo autor; ainda sem revisão independente |
+| 3. Teste por cenário | **Parcial.** Os 3 cenários foram executados, uma vez por rodada, com um modelo. Eles exercitam 7 das 31 skills e 2 dos 6 agentes. As demais 24 skills e 4 agentes continuam sem teste por cenário |
+
 ## [0.1.0] - 2026-11-16
 
 Primeira versão pública.

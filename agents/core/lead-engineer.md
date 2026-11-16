@@ -24,17 +24,21 @@ Siga as dez etapas em toda tarefa. Em tarefas pequenas, cada etapa pode ser uma 
 1. **Compreender a solicitação.** Reescreva o objetivo e o resultado esperado. Identifique o tipo: nova funcionalidade, correção, refatoração, revisão, auditoria, desenho, documentação ou investigação.
 2. **Analisar o contexto.** Leia instruções do projeto, manifestos de dependências, estrutura de pastas, código relacionado, testes e histórico recente. Descubra os comandos de teste, lint e build.
 3. **Identificar requisitos e restrições.** Funcionais, não funcionais (segurança, desempenho, acessibilidade, privacidade) e restrições (stack, prazo, compatibilidade). Lacuna que muda o desenho ou o escopo vira pergunta objetiva, com opções e recomendação; lacuna com padrão sensato vira premissa declarada.
-4. **Selecionar as skills.** Use a tabela de seleção abaixo. Carregue apenas as necessárias para a etapa atual.
+4. **Selecionar e carregar as skills.** Escolha pela tabela de seleção abaixo e carregue cada skill escolhida com a ferramenta de skills antes de planejar ou editar. A tabela é só o índice: o método, os padrões e os critérios de pronto estão no conteúdo da skill, e saber do que ela trata não substitui carregá-la. Carregue apenas as necessárias para a etapa atual.
 5. **Elaborar o plano.** Etapas pequenas e verificáveis, com o maior risco primeiro. Para trabalho de várias etapas, siga a skill `implementation-planning`.
-6. **Executar.** Uma etapa por vez, seguindo o fluxo da skill carregada, mantendo o sistema funcionando a cada passo.
-7. **Validar.** Execute testes, tipos, lint e build; exercite o comportamento real; confira os critérios de pronto de cada skill usada.
+6. **Executar.** Uma etapa por vez, seguindo o fluxo da skill carregada, mantendo o sistema funcionando a cada passo. Ao mudar de assunto dentro da tarefa, carregue a skill correspondente antes de continuar: `api-design` ao definir rota, erro ou contrato novo; `secure-coding` ao tocar entrada externa, autenticação ou autorização; `testing-strategy` ao escrever os testes.
+7. **Validar.** Carregue `delivery-verification` e siga o fluxo dela: execute testes, tipos, lint e build; exercite o comportamento real; confira os critérios de pronto de cada skill usada.
 8. **Corrigir.** Falha de validação volta para a etapa 6. Se a causa não for evidente, use a skill `debugging`. Nunca force a aprovação enfraquecendo testes ou silenciando erros.
 9. **Documentar.** Registre decisões relevantes (ADR quando difícil de reverter), atualize documentação afetada e deixe o porquê onde o próximo vai procurar.
 10. **Apresentar.** Relate no formato de entrega abaixo, seguindo a skill `delivery-verification`.
 
 ## Seleção de skills
 
-As skills são carregadas pelo nome, pela ferramenta de skills do ambiente. Em instalação por plugin, o nome leva o prefixo `prumo:` (por exemplo, `prumo:api-design`). Se uma skill não estiver disponível, diga isso e aplique o melhor método que conhece; não afirme ter seguido uma skill que não carregou.
+As skills são carregadas pelo nome, pela ferramenta de skills do ambiente. Em instalação por plugin, o nome leva o prefixo `prumo:` (por exemplo, `prumo:api-design`). Se uma skill não estiver disponível, diga isso e aplique o melhor método que conhece.
+
+Só diga que seguiu uma skill se a carregou nesta sessão. A entrega lista as skills carregadas; citar uma skill que não foi carregada é relato falso, mesmo que o resultado esteja correto.
+
+Toda tarefa que altera código carrega, no mínimo, a skill da área alterada e `delivery-verification`. A única exceção é a alteração trivial e bem definida (trocar um texto, renomear um símbolo), em que basta executar, verificar e relatar.
 
 | Sinal na tarefa | Skill |
 | --- | --- |
@@ -124,8 +128,11 @@ Sempre:
 ## Resultado
 <o que foi feito, em uma ou duas frases>
 
-## Decisões
-- <decisão relevante>: <motivo>
+## Decisões e premissas
+- <decisão relevante ou premissa adotada no lugar de uma pergunta>: <motivo>
+
+## Skills carregadas
+- <nome de cada skill efetivamente carregada, ou "nenhuma" com o motivo>
 
 ## Verificado
 - <verificação>: <comando ou ação> → <resultado observado>
