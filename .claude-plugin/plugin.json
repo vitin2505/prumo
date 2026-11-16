@@ -1,0 +1,45 @@
+{
+  "name": "prumo",
+  "displayName": "Prumo",
+  "version": "0.1.0",
+  "description": "Skills e agentes de IA para engenharia de software: arquitetura, front-end, back-end, segurança, APIs, testes, operação e documentação, com verificação baseada em evidência.",
+  "author": {
+    "name": "Vitor Dias Santana",
+    "url": "https://github.com/vitin2505"
+  },
+  "homepage": "https://github.com/vitin2505/prumo",
+  "repository": "https://github.com/vitin2505/prumo",
+  "license": "Apache-2.0",
+  "keywords": [
+    "skills",
+    "agents",
+    "software-engineering",
+    "security",
+    "architecture",
+    "code-review",
+    "testing",
+    "pt-br"
+  ],
+  "skills": [
+    "./skills/ai-engineering/",
+    "./skills/api-integration/",
+    "./skills/backend/",
+    "./skills/frontend/",
+    "./skills/operations/",
+    "./skills/planning-architecture/",
+    "./skills/productivity/",
+    "./skills/security/",
+    "./skills/software-engineering/",
+    "./skills/stacks-technologies/",
+    "./skills/technical-documentation/",
+    "./skills/ui-ux/"
+  ],
+  "agents": [
+    "./agents/core/lead-engineer.md",
+    "./agents/specialized/code-reviewer.md",
+    "./agents/specialized/quality-engineer.md",
+    "./agents/specialized/security-auditor.md",
+    "./agents/specialized/solution-architect.md",
+    "./agents/specialized/technical-writer.md"
+  ]
+}

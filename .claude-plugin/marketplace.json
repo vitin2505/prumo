@@ -1,0 +1,23 @@
+{
+  "name": "prumo",
+  "owner": {
+    "name": "Vitor Dias Santana",
+    "url": "https://github.com/vitin2505"
+  },
+  "description": "Skills e agentes de IA para engenharia de software.",
+  "plugins": [
+    {
+      "name": "prumo",
+      "source": "./",
+      "description": "Skills e agentes de IA para engenharia de software, com verificação baseada em evidência.",
+      "category": "engineering",
+      "keywords": [
+        "skills",
+        "agents",
+        "software-engineering",
+        "security",
+        "architecture"
+      ]
+    }
+  ]
+}
