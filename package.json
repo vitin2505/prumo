@@ -1,0 +1,16 @@
+{
+  "name": "prumo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ecossistema de skills e agentes de IA para engenharia de software.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "catalog": "node scripts/validate.mjs --write-catalog",
+    "skills:list": "node scripts/install.mjs --list"
+  }
+}
