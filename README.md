@@ -252,7 +252,7 @@ Nenhuma skill é considerada concluída apenas por existir. O [portão de qualid
 node scripts/validate.mjs
 ```
 
-O estado da validação de cada versão está registrado no [CHANGELOG.md](CHANGELOG.md), incluindo o que ainda não foi testado. Os resultados dos cenários executados estão em [examples/results/](examples/results/0.1.1.md).
+O estado da validação de cada versão está registrado no [CHANGELOG.md](CHANGELOG.md), incluindo o que ainda não foi testado. Os resultados dos cenários executados estão em [examples/results/](examples/results/0.1.2.md), um arquivo por versão.
 
 ## Como criar uma skill
 
@@ -276,7 +276,8 @@ Contribuições são bem-vindas: correções, melhorias de conteúdo, novos cen�
 
 **Próxima versão**
 
-- Ampliar o teste por cenário (nível 3): hoje 3 cenários cobrem 7 das 31 skills ([resultado](examples/results/0.1.1.md)).
+- Tornar confiável o carregamento de `delivery-verification` e o acionamento em sessão sem agente, as duas pendências abertas do teste por cenário ([resultado](examples/results/0.1.2.md)).
+- Repetir os cenários com mais de uma execução e com outros modelos.
 - Conjunto de avaliação automatizada por skill.
 - Versão em inglês em `i18n/en/`, com verificação de paridade.
 

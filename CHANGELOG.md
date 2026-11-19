@@ -4,6 +4,33 @@ Todas as mudanças relevantes deste projeto são registradas aqui. O formato seg
 
 ## [Não lançado]
 
+## [0.1.2] - 2026-11-19
+
+Execução dos cenários 04 a 22, com as correções que ela revelou. Registro completo em [examples/results/0.1.2.md](examples/results/0.1.2.md).
+
+### Corrigido
+
+- `lead-engineer`: correção de defeito, mudança de regra de negócio, migração e commit deixam de poder ser tratados como alteração trivial; cada um carrega a sua skill (`debugging`, `data-modeling`, `git-workflow`). A etapa de contexto passa a incluir README e documentação do projeto.
+- Agentes especializados (`code-reviewer`, `quality-engineer`, `security-auditor`, `solution-architect`, `technical-writer`): o carregamento das skills passa a ser obrigatório, e a entrega termina com a lista das skills carregadas.
+- `stack-python-django`: campo obrigatório ou único em tabela existente exige `data-modeling` e a conferência do volume e da forma de publicação.
+- `git-workflow`: código de depuração esquecido é removido ou levado ao solicitante antes do commit; arquivo não rastreado com segredo fica fora e é sinalizado.
+- `context-economy`: a passagem de bastão confere o estado real e declara o que não há como saber sem a conversa original.
+- `skill-authoring`: os cenários da skill nova são entregues como arquivo em `examples/`, mesmo antes de executados.
+
+### Alterado
+
+- `examples/README.md` indexa os 22 cenários.
+- Guia de início: o acionamento só pela descrição se mostrou pouco confiável; a recomendação para tarefas de ponta a ponta é entrar pelo `lead-engineer` ou chamar a skill pelo nome.
+
+### Estado da validação desta versão
+
+| Nível do portão de qualidade | Estado |
+| --- | --- |
+| 1. Validação automática | Executada, sem erros |
+| 2. Revisão de conteúdo | Realizada pelo autor; ainda sem revisão independente |
+| 3. Teste por cenário | **Executado nos 22 cenários**, que exercitam as 31 skills e os 6 agentes (01 a 03 na versão 0.1.1; 04 a 22 nesta). Uma execução por rodada, um único modelo. Pendências abertas: `delivery-verification` não foi carregada em nenhuma execução; em sessão comum, sem agente, as skills foram carregadas em 5 de 19 execuções |
+
+
 ## [0.1.1] - 2026-11-16
 
 Primeira execução do teste por cenário, com as correções que ela revelou. Registro completo em [examples/results/0.1.1.md](examples/results/0.1.1.md).

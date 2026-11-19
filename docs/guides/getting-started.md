@@ -52,7 +52,7 @@ Para instalar os agentes junto, acrescente `--agents`.
 
 ## 5. Primeiro uso
 
-**Deixe a skill ser acionada pelo pedido:**
+**Deixe a skill ser acionada pelo pedido** (funciona melhor em pedidos que usam os termos da descrição; no teste por cenário da versão 0.1.2, sessões sem agente carregaram skill em 5 de 19 execuções):
 
 ```text
 Crie o endpoint de cancelamento de pedido, com testes.
@@ -64,7 +64,7 @@ Crie o endpoint de cancelamento de pedido, com testes.
 /code-review revise as alterações pendentes
 ```
 
-**Use o agente principal para tarefas de ponta a ponta:**
+**Use o agente principal para tarefas de ponta a ponta** (é a forma recomendada: ele seleciona e carrega as skills pelo protocolo):
 
 ```bash
 claude --agent lead-engineer
@@ -89,7 +89,7 @@ Use o agente security-auditor para auditar src/auth.
 | Sintoma | Causa provável | Solução |
 | --- | --- | --- |
 | A skill não aparece na lista | Copiada com a pasta da categoria, ou fora de `.claude/skills/` | O caminho deve ser `.claude/skills/<nome>/SKILL.md` |
-| A skill não é acionada sozinha | O pedido não usa termos próximos da descrição | Chame pelo nome ou reformule o pedido |
+| A skill não é acionada sozinha | O modelo decide pela descrição e muitas vezes resolve sem carregar nada | Entre com `claude --agent lead-engineer` ou chame a skill pelo nome |
 | Link de referência não abre | Só o `SKILL.md` foi copiado | Copie a pasta inteira, com `references/` |
 | O agente diz que a skill não está disponível | Agentes instalados sem as skills que usam | Instale as skills citadas na seção "Skills" do agente |
 | Nomes com prefixo `prumo:` | Instalação por plugin | Use `/prumo:nome-da-skill` e `prumo:lead-engineer` |
