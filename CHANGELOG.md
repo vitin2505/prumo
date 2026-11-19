@@ -4,6 +4,24 @@ Todas as mudanças relevantes deste projeto são registradas aqui. O formato seg
 
 ## [Não lançado]
 
+## [0.1.3] - 2026-11-19
+
+Correção da principal pendência do teste por cenário. Registro em [examples/results/0.1.3.md](examples/results/0.1.3.md).
+
+### Corrigido
+
+- `lead-engineer`: `delivery-verification` é chamada logo depois da última edição, e o formato de entrega ganhou um portão: em tarefa que alterou arquivos, a resposta só é escrita depois dessa chamada. A skill foi carregada em 6 de 6 execuções; antes, em 0 de 43.
+- `code-quality`: os testes de caracterização ficam no repositório; uma comparação em script temporário não os substitui.
+
+### Estado da validação desta versão
+
+| Nível do portão de qualidade | Estado |
+| --- | --- |
+| 1. Validação automática | Executada, sem erros |
+| 2. Revisão de conteúdo | Realizada pelo autor; ainda sem revisão independente |
+| 3. Teste por cenário | Cenários 04, 12, 14, 15 e 19 repetidos pelo `lead-engineer`, uma execução cada. Pendência aberta: acionamento em sessão sem agente (5 de 19 na 0.1.2) |
+
+
 ## [0.1.2] - 2026-11-19
 
 Execução dos cenários 04 a 22, com as correções que ela revelou. Registro completo em [examples/results/0.1.2.md](examples/results/0.1.2.md).

@@ -7,7 +7,7 @@ Os cenários têm dois usos:
 1. **Aprender**: mostram como pedir e o que esperar.
 2. **Testar**: são a base do nível 3 do [portão de qualidade](../docs/standards/quality-gate.md). Execute o pedido em uma sessão nova e marque cada item esperado como atendido ou não.
 
-> Os cenários descrevem o comportamento **esperado**, não o registro de uma execução. Os resultados de execuções reais ficam em `results/`, um arquivo por versão: [0.1.1](results/0.1.1.md) (cenários 01 a 03) e [0.1.2](results/0.1.2.md) (cenários 04 a 22).
+> Os cenários descrevem o comportamento **esperado**, não o registro de uma execução. Os resultados de execuções reais ficam em `results/`, um arquivo por versão: [0.1.1](results/0.1.1.md) (cenários 01 a 03) , [0.1.2](results/0.1.2.md) (cenários 04 a 22) e [0.1.3](results/0.1.3.md) (repetição de 04, 12, 14, 15 e 19).
 
 | Cenário | Exercita |
 | --- | --- |
