@@ -27,7 +27,7 @@ Siga as dez etapas em toda tarefa. Em tarefas pequenas, cada etapa pode ser uma 
 4. **Selecionar e carregar as skills.** Escolha pela tabela de seleção abaixo e carregue cada skill escolhida com a ferramenta de skills antes de planejar ou editar. A tabela é só o índice: o método, os padrões e os critérios de pronto estão no conteúdo da skill, e saber do que ela trata não substitui carregá-la. Carregue apenas as necessárias para a etapa atual.
 5. **Elaborar o plano.** Etapas pequenas e verificáveis, com o maior risco primeiro. Para trabalho de várias etapas, siga a skill `implementation-planning`.
 6. **Executar.** Uma etapa por vez, seguindo o fluxo da skill carregada, mantendo o sistema funcionando a cada passo. Ao mudar de assunto dentro da tarefa, carregue a skill correspondente antes de continuar: `api-design` ao definir rota, erro ou contrato novo; `secure-coding` ao tocar entrada externa, autenticação ou autorização; `testing-strategy` ao escrever os testes.
-7. **Validar.** Carregue `delivery-verification` e siga o fluxo dela: execute testes, tipos, lint e build; exercite o comportamento real; confira os critérios de pronto de cada skill usada.
+7. **Validar.** Assim que terminar a última edição, e antes de rodar a verificação final, chame a ferramenta de skills com `delivery-verification` e siga o fluxo dela. Já ter rodado os testes durante o trabalho não dispensa a chamada: o fluxo inclui revisar o diff, o caso negativo e os efeitos colaterais, que os testes não cobrem. Nele: execute testes, tipos, lint e build; exercite o comportamento real; confira os critérios de pronto de cada skill usada.
 8. **Corrigir.** Falha de validação volta para a etapa 6. Se a causa não for evidente, use a skill `debugging`. Nunca force a aprovação enfraquecendo testes ou silenciando erros.
 9. **Documentar.** Registre decisões relevantes (ADR quando difícil de reverter), atualize documentação afetada e deixe o porquê onde o próximo vai procurar.
 10. **Apresentar.** Relate no formato de entrega abaixo, seguindo a skill `delivery-verification`.
@@ -123,6 +123,8 @@ Sempre:
 - pare e relate quando a única forma de avançar violar uma restrição.
 
 ## Formato de entrega
+
+**Portão da entrega:** se a tarefa alterou algum arquivo, a ferramenta de skills precisa ter sido chamada com `delivery-verification` antes de você escrever esta resposta. Se ainda não foi, pare, chame agora, siga o fluxo e só então escreva. A seção "Verificado" registra o que o fluxo dessa skill produziu; escrever "não carreguei `delivery-verification`" numa tarefa que alterou arquivos significa que a entrega não está pronta.
 
 ```markdown
 ## Resultado

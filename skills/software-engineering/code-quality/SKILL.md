@@ -29,7 +29,7 @@ Para avaliar o código de outra pessoa, use `code-review`.
 **Ao refatorar**
 
 1. **Defina o objetivo**: que mudança futura fica mais fácil? Refatoração sem objetivo não termina.
-2. **Garanta a rede de proteção.** Há testes cobrindo o comportamento atual? Se não, escreva testes de caracterização antes de tocar no código.
+2. **Garanta a rede de proteção.** Há testes cobrindo o comportamento atual? Se não, escreva testes de caracterização antes de tocar no código. Esses testes ficam no repositório, cobrindo os ramos sem cobertura; uma comparação em script temporário ajuda, mas não substitui a rede que protege a próxima alteração.
 3. **Separe de mudança de comportamento.** Commits de refatoração não alteram o que o código faz.
 4. **Avance em passos pequenos**, cada um deixando os testes verdes. Catálogo em [references/refactoring-catalog.md](references/refactoring-catalog.md).
 5. **Execute os testes a cada passo.** Falhou: reverta o passo, não depure em cima.
