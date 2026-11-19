@@ -27,7 +27,7 @@ O histórico é documentação: cada commit explica uma mudança e cada pull req
 
 1. **Sincronize** com o ramo principal e crie um ramo curto com nome descritivo: `tipo/descricao-curta` (por exemplo, `feat/cancelamento-de-pedido`).
 2. **Trabalhe em passos pequenos.** Cada commit compila, passa nos testes e faz uma coisa.
-3. **Revise o próprio diff** antes de cada commit. Adicione arquivos de forma seletiva; evite `git add .` sem conferir o que entra.
+3. **Revise o próprio diff** antes de cada commit. Adicione arquivos de forma seletiva; evite `git add .` sem conferir o que entra. Código de depuração esquecido (log temporário, `console.log`, `print`) é removido ou levado ao solicitante antes do commit, nunca incluído em silêncio. Arquivo não rastreado com segredo (`.env`, chaves) fica fora do commit; avise e proponha incluí-lo no `.gitignore`.
 4. **Escreva a mensagem** no padrão abaixo.
 5. **Antes de abrir o pull request**: atualize com o ramo principal, rode as verificações locais e reorganize commits de correção para que o histórico conte a história certa.
 6. **Abra o pull request** pequeno, com a descrição no modelo abaixo.

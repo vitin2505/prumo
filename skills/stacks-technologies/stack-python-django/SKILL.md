@@ -63,7 +63,7 @@ Convenções de stack. Princípios gerais estão em `backend-engineering`, `data
 **Django: migrações**
 - Uma migração por mudança lógica, revisada como código. Não edite migração já aplicada.
 - Migração de dados separada da de esquema, reversível quando possível, usando o modelo histórico (`apps.get_model`).
-- Mudanças em tabelas grandes seguem expandir, migrar e contrair: ver `data-modeling`.
+- Mudanças em tabelas grandes seguem expandir, migrar e contrair: ver `data-modeling`. Antes de adicionar campo obrigatório ou único a uma tabela existente, carregue `data-modeling` e confira na documentação do projeto o volume e a forma de publicação; não presuma tabela vazia.
 
 **Django: segurança**
 - Execute `manage.py check --deploy` e trate os avisos.

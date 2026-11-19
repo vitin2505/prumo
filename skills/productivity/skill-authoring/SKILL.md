@@ -21,7 +21,7 @@ Uma skill é conhecimento operacional: ensina um agente a executar um tipo de tr
    - Já existe skill que cobre isso? Consulte o catálogo em `docs/catalog.md`. Se a sobreposição for grande, amplie a existente em vez de criar outra.
 2. **Defina o escopo em uma frase** e escreva também o que fica de fora, apontando para a skill vizinha.
 3. **Colete o conhecimento** na fonte: prática comprovada, documentação oficial, código real. Registre o que não pôde ser verificado; não preencha lacuna com suposição.
-4. **Escreva três cenários de teste** antes do conteúdo: pedidos realistas em que a skill deve atuar, e o que se espera observar no resultado. Inclua um cenário em que ela **não** deve ser acionada.
+4. **Escreva três cenários de teste** antes do conteúdo: pedidos realistas em que a skill deve atuar, e o que se espera observar no resultado. Inclua um cenário em que ela **não** deve ser acionada. Os cenários são entregues como arquivo em `examples/`, no formato de `examples/README.md`, mesmo quando ainda não puderem ser executados; nesse caso, declare-os como não executados.
 5. **Escreva a descrição** (campo `description`): o que a skill faz, seguido de "Use quando..." com as situações e os termos que o usuário empregaria. É o único texto lido para decidir o acionamento.
 6. **Escreva o `SKILL.md`** a partir de `templates/skill/SKILL.md`, com as seções obrigatórias.
 7. **Mova o detalhe para `references/`**: tabelas extensas, modelos, catálogos e conteúdo usado só em parte dos casos. O `SKILL.md` diz quando abrir cada referência.
@@ -85,6 +85,7 @@ Seções recomendadas: contexto a levantar, `## Padrões`, `## Exemplo`, `## Ski
 - Descrição vaga, que aciona sempre ou nunca.
 - `SKILL.md` gigante que carrega tudo em toda execução.
 - Critérios de pronto que não podem ser verificados ("código de qualidade").
+- Entregar a skill sem os arquivos de cenário em `examples/`.
 - Publicar sem executar os cenários.
 - Declarar resultado de teste que não foi executado.
 

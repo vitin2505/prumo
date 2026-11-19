@@ -55,7 +55,7 @@ Contexto é um recurso finito: o que entra na janela compete por atenção e tem
 
 **Passagem de bastão**
 
-Ao pausar, transferir ou reiniciar, escreva um resumo que permita a continuação por alguém sem a conversa:
+Ao pausar, transferir ou reiniciar, escreva um resumo que permita a continuação por alguém sem a conversa: confira o estado real antes (`git status`, `git diff`, execução dos testes) e escreva só o que o repositório ou a conversa mostram. Se a sessão começou sem a conversa original, declare o que não há como saber (motivo do pedido, decisões e combinados) em vez de deduzir.
 
 ```markdown
 ## Objetivo
